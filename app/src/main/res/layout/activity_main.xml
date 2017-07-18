@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100"
+    tools:context="com.sharedprefences.MainActivity">
+
+    <EditText
+        android:layout_weight="20"
+        android:layout_width="match_parent"
+        android:id="@+id/edText"
+        android:layout_height="wrap_content"
+        android:hint="Yazı yaz.."
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btKayit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kaydet" />
+
+        <Button
+            android:id="@+id/btGetir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Veri Getir" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvYazi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:text="Buraya gelcek yazı." />
+
+</LinearLayout>
